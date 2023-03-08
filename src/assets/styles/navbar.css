@@ -1,0 +1,30 @@
+.navbar {
+  background-color: var(--nav-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.4rem #fff);
+}
+.header-logo {
+  max-width: 5rem;
+  padding-right: 10px;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+}
+.header-title {
+  text-align: center;
+  color: var(--title-color);
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  font-weight: 800;
+}

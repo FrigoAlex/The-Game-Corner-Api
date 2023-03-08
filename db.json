@@ -1,0 +1,349 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Super Mario Odyssey",
+      "author": "Nintendo",
+      "description": "Super Mario Odyssey is a 2017 platform game developed and published by Nintendo for the Nintendo Switch. An entry in the Super Mario series, it follows Mario and his new ally Cappy a sentient hat that allows Mario to control other characters and objects as they journey across various kingdoms to save Princess Peach from his nemesis Bowser's plans of forced marriage. In contrast to the linear gameplay of prior entries, the game returns to the primarily open-ended, 3D platform gameplay featured in Super Mario 64 and Super Mario Sunshine.",
+      "image": "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5",
+      "releaseDate": "October 27, 2017",
+      "genre": "Platform",
+      "rating": 9.7,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 2,
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "author": "Nintendo",
+      "description": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed and published by Nintendo for the Nintendo Switch and Wii U consoles. The game is an installment of The Legend of Zelda series and is set at the end of its timeline. The player controls an amnesiac Link, who awakens from a hundred-year slumber, and attempts to regain his memories, save princess Zelda and prevent the further destruction of Hyrule by Calamity Ganon.",
+      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58",
+      "releaseDate": "March 3, 2017",
+      "genre": "Action-adventure",
+      "rating": 9.7,
+      "platforms": ["Nintendo Switch", "Wii U"]
+    },
+    {
+      "id": 3,
+      "name": "Super Mario 3D World",
+      "author": "Nintendo",
+      "description": "Super Mario 3D World is a 2013 platform game developed and published by Nintendo for the Wii U. It is the first main Mario platformer since Super Mario 3D Land for the Nintendo 3DS in 2011, and the first main Mario game since Super Mario Galaxy 2 for the Wii in 2010. It is the fifth installment in the Super Mario 3D series, following Super Mario 64, Super Mario Sunshine, Super Mario Galaxy, and Super Mario Galaxy 2. It is also the first main Mario game to be released on a home console since Super Mario Galaxy 2 in 2010.",
+      "image": "https://videojuegos.roams.es/images/post/es_ES_videogames/juegos-super-mario-3d-world.jpg",
+      "releaseDate": "November 22, 2013",
+      "genre": "Platform",
+      "rating": 9.6,
+      "platforms": ["Nintendo Switch", "Wii U"]
+    },
+    {
+      "id": 4,
+      "name": "Super Mario Maker 2",
+      "author": "Nintendo",
+      "description": "Super Mario Maker 2 is a 2019 side-scrolling platform video game developed and published by Nintendo for the Nintendo Switch. It is the sequel to the 2015 game Super Mario Maker and the second installment in the Super Mario Maker series. The game was released worldwide on June 28, 2019.",
+      "image": "https://supermariomaker.nintendo.com/assets/icons/smm2-share-fb.jpg",
+      "releaseDate": "June 28, 2019",
+      "genre": "Platform",
+      "rating": 8.9,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 5,
+      "name": "Metroid Dread",
+      "author": "Nintendo",
+      "description": "Metroid Dread is a 2021 action-adventure game developed by MercurySteam and published by Nintendo for the Nintendo Switch. It is the first Metroid game to be released on a home console since Metroid Prime 3: Corruption in 2007, and the first Metroid game to be released on a Nintendo home console since Metroid: Samus Returns in 2017. It is the twelfth installment in the Metroid series, and the first to be developed by MercurySteam.",
+      "image": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_MetroidDread.jpg",
+      "releaseDate": "October 8, 2021",
+      "genre": "Action-adventure",
+      "rating": 8.8,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 6,
+      "name": "New Pokemon Snap",
+      "author": "Nintendo",
+      "description": "New Pokémon Snap is a 2021 action-adventure game developed by Bandai Namco Studios and published by The Pokémon Company for the Nintendo Switch. It is a sequel to the 1999 Nintendo 64 game Pokémon Snap, and is the first mainline Pokémon game to be released on a home console since Pokémon Let's Go, Pikachu! and Let's Go, Eevee! in 2018.",
+      "image": "https://i.blogs.es/011399/new-pokemon-snap-analisis/1366_2000.jpeg",
+      "releaseDate": "April 30, 2021",
+      "genre": "Action-adventure",
+      "rating": 8,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 7,
+      "name": "Pokemon brilliant diamond",
+      "author": "Nintendo",
+      "description": "Pokémon Brilliant Diamond and Shining Pearl are 2021 role-playing video games developed by Game Freak and published by The Pokémon Company for the Nintendo Switch. They are remakes of the 2006 Nintendo DS games Pokémon Diamond and Pearl, respectively, and are the first mainline Pokémon games to be released on a home console since Pokémon Let's Go, Pikachu! and Let's Go, Eevee! in 2018.",
+      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000039950/37fdb03bef333221200ace5554c0d43e17ab547d8c3285d444d71808ee52f83a",
+      "releaseDate": "November 19, 2021",
+      "genre": "Action-adventure",
+      "rating": 7.7,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 8,
+      "name": "Pokemon Legends Arceus",
+      "author": "Nintendo",
+      "description": "Pokémon Legends: Arceus is a 2022 role-playing video game developed by Game Freak and published by The Pokémon Company for the Nintendo Switch. It is the first mainline Pokémon game to be released on a home console since Pokémon Let's Go, Pikachu! and Let's Go, Eevee! in 2018.",
+      "image": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_PokemonLegendsArceus_EN_image1600w.jpg",
+      "releaseDate": "January 28, 2022",
+      "genre": "Action-adventure",
+      "rating": 7.8,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 9,
+      "name": "Super smash bros ultimate",
+      "author": "Nintendo",
+      "description": "Super Smash Bros. Ultimate is a 2018 crossover fighting game developed by Bandai Namco Studios and Sora Ltd. and published by Nintendo for the Nintendo Switch. It is the fifth installment in the Super Smash Bros. series, succeeding Super Smash Bros. for Nintendo 3DS and Wii U. It was released worldwide on December 7, 2018.",
+      "image": "https://www.smashbros.com/data/bs/es_ES/en_GB/img/1_US.jpg",
+      "releaseDate": "December 7, 2018",
+      "genre": "Fighting",
+      "rating": 9.3,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 10,
+      "name": "Kirby and the forgotten land",
+      "author": "Nintendo",
+      "description": "Kirby and the Forgotten Land is a 2022 action-adventure game developed by HAL Laboratory and published by Nintendo for the Nintendo Switch. It is the first Kirby game to be released on a home console since Kirby's Epic Yarn in 2010, and the first Kirby game to be released on a Nintendo home console since Kirby's Return to Dream Land in 2011.",
+      "image": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_KirbyAndTheForgottenLand_onlylogo_enGB_image1600w.jpg",
+      "releaseDate": "March 25, 2022",
+      "genre": "Action-adventure",
+      "rating": 8.6,
+      "platforms": ["Nintendo Switch"]
+    },
+    {
+      "id": 11,
+      "name": "Kingdom hearts 3",
+      "author": "Square Enix",
+      "description": "Kingdom Hearts III is a 2019 action role-playing game developed and published by Square Enix for the PlayStation 4 and Xbox One. It is the twelfth installment in the Kingdom Hearts series, and the sequel to Kingdom Hearts II. The game was released worldwide on January 29, 2019.",
+      "image": "https://as01.epimg.net/meristation/imagenes/2019/01/16/reportajes/1547631928_341081_1547632543_noticia_normal.jpg",
+      "releaseDate": "January 29, 2019",
+      "genre": "Action-adventure",
+      "rating": 7.9,
+      "platforms": ["PlayStation 4", "Xbox One"]
+    },
+    {
+      "id": 12,
+      "name": "Final fantasy 7 remake",
+      "author": "Square Enix",
+      "description": "Final Fantasy VII Remake is a 2020 action role-playing game developed and published by Square Enix for the PlayStation 4. It is a remake of the 1997 PlayStation game Final Fantasy VII, and the first in a planned series of games remaking the original Final Fantasy VII. The game was released worldwide on April 10, 2020.",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1462040/capsule_616x353.jpg?t=1655449232",
+      "releaseDate": "April 10, 2020",
+      "genre": "Action role-playing",
+      "rating": 8.7,
+      "platforms": ["PlayStation 4"]
+    },
+    {
+      "id": 13,
+      "name": "Halo the master chief collection",
+      "author": "343 Industries",
+      "description": "Halo: The Master Chief Collection is a compilation of first-person shooter video games in the Halo series for the Xbox One. The collection includes Halo: Combat Evolved Anniversary, Halo 2: Anniversary, Halo 3, and Halo 4, all of which have been remastered for the Xbox One. The collection was released on November 11, 2014.",
+      "image": "https://assets.xboxservices.com/assets/f4/5e/f45e8f21-64c9-4cad-9de3-2bf88b78ab7a.jpg?n=Halo-MCC_Poster-Image_1920x1080_09.jpg",
+      "releaseDate": "November 11, 2014",
+      "genre": "First-person shooter",
+      "rating": 8.8,
+      "platforms": ["Xbox One"]
+    },
+    {
+      "id": 14,
+      "name": "Assasin's creed valhalla",
+      "author": "Ubisoft",
+      "description": "Assassin's Creed Valhalla is a 2020 action role-playing video game developed by Ubisoft Montreal and published by Ubisoft. It is the twelfth major installment and the twenty-second release in the Assassin's Creed series, and a successor to 2018's Assassin's Creed Odyssey. The game was released for Microsoft Windows, PlayStation 4, Stadia, and Xbox One on November 10, 2020, and for PlayStation 5 and Xbox Series X and Series S on December 10, 2020.",
+      "image": "https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/6ZAlQrGYxXi8Bo8PuhJd5g/206c57ecb27e58b4555089c6c80d3db5/ACV_meta.png",
+      "releaseDate": "November 10, 2020",
+      "genre": "Action role-playing",
+      "rating": 8.3,
+      "platforms": ["PlayStation 4", "Xbox One", "Microsoft Windows"]
+    },
+    {
+      "id": 15,
+      "name": "Assasin's creed black flag",
+      "author": "Ubisoft",
+      "description": "Assassin's Creed IV: Black Flag is a 2013 action-adventure video game developed by Ubisoft Montreal and published by Ubisoft. It is the sixth major installment in the Assassin's Creed series and a successor to 2012's Assassin's Creed III. The game was released for PlayStation 3, PlayStation 4, Xbox 360, Xbox One, and Microsoft Windows in October 2013.",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/242050/capsule_616x353.jpg?t=1670596397",
+      "releaseDate": "October 29, 2013",
+      "genre": "Action-adventure",
+      "rating": 8.9,
+      "platforms": ["PlayStation 3", "Xbox 360", "Microsoft Windows"]
+    },
+    {
+      "id": 16,
+      "name": "Grand theft auto 5",
+      "author": "Rockstar Games",
+      "description": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency.",
+      "image": "https://cdn.forbes.co/2020/05/Grand-Theft-Auto-V-640x360-1.jpg",
+      "releaseDate": "September 17, 2013",
+      "genre": "Action-adventure",
+      "rating": 9.6,
+      "platforms": ["PlayStation 3", "Xbox 360", "Microsoft Windows"]
+    },
+    {
+      "id": 17,
+      "name": "Stardew valley",
+      "author": "ConcernedApe",
+      "description": "Stardew Valley is a 2016 open-ended country-life RPG developed by ConcernedApe and published by Chucklefish. Players assume the role of a character who moves from a big city to a small town in order to start a new life. The game is played from a third-person perspective, and its world is navigated on foot or by riding various forms of transportation.",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/413150/capsule_616x353.jpg?t=1666917466",
+      "releaseDate": "February 26, 2016",
+      "genre": "Simulation",
+      "rating": 8.9,
+      "platforms": ["PlayStation 4", "Xbox One", "Microsoft Windows"]
+    },
+    {
+      "id": 18,
+      "name": "Hollow knight",
+      "author": "Team Cherry",
+      "description": "Hollow Knight is a 2017 action-adventure game developed and published by Team Cherry. The game was released for Microsoft Windows, macOS, Linux, PlayStation 4, and Nintendo Switch in 2017, and for Xbox One in 2019. The game is a metroidvania platformer, with exploration and puzzle-solving elements. The player controls a knight who must travel through a vast insectoid kingdom to defeat the Hollow Knight, a being that threatens to destroy the kingdom.",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/367520/capsule_616x353.jpg?t=1667006028",
+      "releaseDate": "February 24, 2017",
+      "genre": "Action-adventure",
+      "rating": 9,
+      "platforms": ["PlayStation 4", "Xbox One", "Microsoft Windows"]
+    },
+    {
+      "id": 19,
+      "name": "God of war 4",
+      "author": "Santa Monica Studio",
+      "description": "God of War is a 2018 action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It is the eighth installment in the God of War series, the eighth chronologically, and the sequel to 2010's God of War III. The game is set in Norse mythology, based on the legends of the eponymous Norse god of war, and chronicles the journey of Kratos, a former Spartan warrior who is tricked into killing his family by his father Zeus, the king of the Greek gods.",
+      "image": "https://depor.com/resizer/iXriNfjO0Ehf4Z9Zm9ZT49r_40I=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KGPLE3GVHNBEXLLH5OY6JOF454.jpg",
+      "releaseDate": "April 20, 2018",
+      "genre": "Action-adventure",
+      "rating": 9.4,
+      "platforms": ["PlayStation 4"]
+    },
+    {
+      "id": 20,
+      "name": "Minecraft",
+      "author": "Mojang",
+      "description": "Minecraft is a sandbox video game developed by Mojang. The game was created by Markus Persson in the Java programming language. It was publicly released for the PC on May 17, 2009, as a developmental alpha version and, after gradual up\"date\"s, was published as a full release version on November 18, 2011. The game's creative and building aspects have led it to be described as a sandbox game.",
+      "image": "https://s2.gaming-cdn.com/images/products/442/orig-fallback-v1/minecraft-java-y-bedrock-edition-pc-juego-cover.jpg?v=1674156218",
+      "releaseDate": "May 17, 2009",
+      "genre": "Sandbox",
+      "rating": 9.1,
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360",
+        "PlayStation 4",
+        "Xbox One",
+        "Microsoft Windows"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "The last of us",
+      "author": "Naughty Dog",
+      "description": "The Last of Us is a 2013 action-adventure game developed by Naughty Dog and published by Sony Computer Entertainment. The game was released for the PlayStation 3 in June 2013, and an remastered version for the PlayStation 4 was released in July 2014. The Last of Us is played from a third-person perspective; players use firearms and improvised weapons, and can use stealth to defend against hostile humans and cannibalistic creatures infected by a mutated strain of the Cordyceps fungus.",
+      "image": "https://www.gamerfocus.co/wp-content/uploads/2022/06/tlou_remake_01.jpeg",
+      "releaseDate": "June 14, 2013",
+      "genre": "Action-adventure",
+      "rating": 9.4,
+      "platforms": ["PlayStation 3", "PlayStation 4"]
+    },
+    {
+      "id": 22,
+      "name": "Rainbow six siege",
+      "author": "Ubisoft Montreal",
+      "description": "Tom Clancy's Rainbow Six Siege is the sixteenth installment in the Tom Clancy's Rainbow Six Franchise developed by Ubisoft Montreal and published by Ubisoft Entertainment. It is considered a successor to the cancelled Tom Clancy's Rainbow Six: Patriots.",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/359550/capsule_616x353.jpg?t=1598360000",
+      "releaseDate": "December 1, 2015",
+      "genre": "First-person shooter",
+      "rating": 8.9,
+      "platforms": ["PlayStation 4", "Xbox One", "Microsoft Windows"]
+    },
+    {
+      "id": 23,
+      "name": "Apex legends",
+      "author": "Respawn Entertainment",
+      "description": "Apex Legends is a free-to-play battle royale game developed by Respawn Entertainment and published by Electronic Arts. It was released for Microsoft Windows, PlayStation 4, and Xbox One on February 4, 2019, without any prior announcement or marketing. The game is set in the Titanfall universe, taking place after the events of Titanfall 2 and before the events of Titanfall.",
+      "image": "https://cdn.akamai.steamstatic.com/steam/apps/1172470/capsule_616x353.jpg?t=1598360000",
+      "releaseDate": "February 4, 2019",
+      "genre": "Battle royale",
+      "rating": 8.9,
+      "platforms": ["PlayStation 4", "Xbox One", "Microsoft Windows"]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "gameId": 5,
+      "text": "This game is awesome!",
+      "author": "John Doe",
+      "date": "2020-08-01T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "gameId": 1,
+      "text": "OMG, This game is so cool!",
+      "author": "Jane Doe",
+      "date": "2020-08-01T12:10:00Z"
+    },
+    {
+      "id": 3,
+      "gameId": 9,
+      "text": "I'm absolutely in love with this game!",
+      "author": "Mark Johnson",
+      "date": "2020-08-01T13:00:00Z"
+    },
+    {
+      "id": 4,
+      "gameId": 6,
+      "text": "Can't stop playing this game!",
+      "author": "Sarah Thompson",
+      "date": "2020-08-01T14:00:00Z"
+    },
+    {
+      "id": 5,
+      "gameId": 21,
+      "text": "This game is a masterpiece!",
+      "author": "Adam Smith",
+      "date": "2020-08-01T15:00:00Z"
+    },
+    {
+      "id": 6,
+      "gameId": 12,
+      "text": "I've been recommending this game to everyone!",
+      "author": "Emily Davis",
+      "date": "2020-08-01T16:00:00Z"
+    },
+    {
+      "id": 7,
+      "gameId": 14,
+      "text": "I'm so glad I found this game, it's amazing!",
+      "author": "Chris Jackson",
+      "date": "2020-08-01T17:00:00Z"
+    },
+    {
+      "id": 8,
+      "gameId": 5,
+      "text": "If you haven't played this game yet, you're missing out!",
+      "author": "Amanda White",
+      "date": "2020-08-01T18:00:00Z"
+    },
+    {
+      "id": 9,
+      "gameId": 6,
+      "text": "I never knew a game could be this addictive!",
+      "author": "David Brown",
+      "date": "2020-08-01T19:00:00Z"
+    },
+    {
+      "id": 10,
+      "gameId": 18,
+      "text": "I can't wait for the sequel, this game was amazing!",
+      "author": "Karen Lee",
+      "date": "2020-08-01T20:00:00Z"
+    },
+    {
+      "id": 11,
+      "gameId": 19,
+      "text": "This game is a work of art!",
+      "author": "Jacob Perez",
+      "date": "2020-08-02T12:00:00Z"
+    },
+    {
+      "id": 12,
+      "gameId": 15,
+      "text": "I'm so glad I bought this game, it's worth every penny!",
+      "author": "Monica Rodriguez",
+      "date": "2020-08-02T13:00:00Z"
+    }
+  ]
+}
