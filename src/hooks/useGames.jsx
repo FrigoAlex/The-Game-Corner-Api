@@ -1,4 +1,4 @@
-import getGames from "../utils/dbSocket";
+import getDBGames from "../utils/dbSocket";
 import { useState, useEffect } from "react";
 
 const GAMES_PER_PAGE = 10;
@@ -9,8 +9,12 @@ const useGamePagination = () => {
   const [filter, setFilter] = useState("");
   const [totalPages, setTotalPages] = useState(0);
 
-  useEffect(() => {
-    const { games, totalPages } = getGames(page, GAMES_PER_PAGE, filter);
+  const getGames = async () => {
+    const { games, totalPages } = await getDBGames(
+      page,
+      GAMES_PER_PAGE,
+      filter
+    );
     if (page < 1 && games.length > 0) {
       return setPage(1);
     }
@@ -19,6 +23,10 @@ const useGamePagination = () => {
     if (page > totalPages) {
       return setPage(totalPages);
     }
+  };
+
+  useEffect(() => {
+    getGames();
   }, [page, filter]);
 
   const goOnePageBack = () => {
