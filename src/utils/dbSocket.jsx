@@ -1,21 +1,15 @@
 import db from "../../db.json";
+import dataFetcher from "../utils/dataFetcher";
 
 const getGame = (id) => {
   return db.games.find((game) => game.id === id);
 };
 
-const getGames = (page = 1, limit = 10, filter = "") => {
-  const games =
-    filter !== ""
-      ? db.games.filter((game) =>
-        game.name.toLowerCase().includes(filter.toLowerCase())
-      )
-      : db.games;
-  const start = (page - 1) * limit;
-  const end = start + limit;
+const getGames = async (page = 1, limit = 10, filter = "") => {
+  const { paginas, data } = await dataFetcher(page, limit, filter);
   return {
-    totalPages: Math.ceil(games.length / limit),
-    games: games.slice(start, end)
+    totalPages: paginas,
+    games: data
   };
 };
 const getComments = (gameId) => {
