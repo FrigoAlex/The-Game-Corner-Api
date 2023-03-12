@@ -1,18 +1,22 @@
-import { getComments } from "../utils/dbSocket";
+import { getComments, addComment } from "../utils/dbSocket";
 import { useState, useEffect } from "react";
-
 const useComment = (id) => {
   const [comments, setComments] = useState([]);
+  const uptadeComments = async () => {
+    await setComments(await getComments(id));
+  };
+
   useEffect(() => {
-    setComments(getComments(id));
+    uptadeComments();
   }, []);
-  const addComent = (comment) => {
+  const addComent = async (comment) => {
     if (comment.author.trim() !== "" && comment.text.trim() !== "") {
       setComments([
         { ...comment, id: Math.max(...comments.map((x) => x.id)) + 1 },
         ...comments
       ]);
     }
+    await addComment(comment);
   };
   return { comments, addComent };
 };
