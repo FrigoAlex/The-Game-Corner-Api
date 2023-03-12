@@ -2,17 +2,36 @@ import "../assets/styles/gameDescription.css";
 import "../assets/styles/mediaquerys.css";
 import { getGame } from "../utils/dbSocket";
 import Comments from "../components/comments";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
   faTags,
   faCalendarDay,
   faGamepad,
-  faStar,
+  faStar
 } from "@fortawesome/free-solid-svg-icons";
 const GameDescription = () => {
+  const [game, setGame] = useState({});
   const id = window.location.pathname.split("/")[2];
-  const game = getGame(Number(id));
+  const updateGame = async () => {
+    setGame(await getGame(Number(id)));
+  };
+  useEffect(() => {
+    updateGame();
+  }, []);
+  if (!game.name) {
+    return (
+      <main className="detail-section">
+        <div className="games-section-container">
+          <h2 className="game-title">Loading...</h2>
+          <div className="loader-container">
+            <span className="loader"></span>
+          </div>
+        </div>
+      </main>
+    );
+  }
   return (
     <main className="detail-section">
       <div className="games-section-container">
@@ -35,20 +54,20 @@ const GameDescription = () => {
           <ul className="game-info-list">
             <li className="game-info-item">
               <FontAwesomeIcon className="game-info-icon" icon={faUser} />
-              <span className="game-info-title">Author:</span>
+              <span className="game-info-title">Author: </span>
               <span className="game-info-value">{game.author}</span>
             </li>
             <li className="game-info-item">
               <FontAwesomeIcon className="game-info-icon" icon={faTags} />
-              <span className="game-info-title">Genre:</span>
-              <span className="game-info-value">{game.genre}</span>
+              <span className="game-info-title">Genre: </span>
+              <span className="game-info-value">{game.genres.join(", ")}</span>
             </li>
             <li className="game-info-item">
               <FontAwesomeIcon
                 className="game-info-icon"
                 icon={faCalendarDay}
               />
-              <span className="game-info-title">Release Date:</span>
+              <span className="game-info-title">Release Date: </span>
               <span className="game-info-value">{game.releaseDate}</span>
             </li>
           </ul>
