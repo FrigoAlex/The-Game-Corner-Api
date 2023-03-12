@@ -1,3 +1,8 @@
+@media screen and (max-width: 300px) {
+  .nav-elements {
+    font-size: 0.9rem;
+  }
+}
 @media screen and (max-width: 576px) {
   .games-section {
     padding: 1rem 0;
