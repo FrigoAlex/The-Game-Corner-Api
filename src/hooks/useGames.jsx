@@ -1,6 +1,7 @@
 import getDBGames from "../utils/dbSocket";
-import { useState, useEffect } from "react";
-
+import { debounceTimer } from "../constants/constants";
+import { useState, useEffect, useCallback } from "react";
+import { debounce } from "lodash";
 const GAMES_PER_PAGE = 10;
 
 const useGamePagination = () => {
@@ -41,10 +42,13 @@ const useGamePagination = () => {
     }
   };
 
-  const updateFilter = (newFilter) => {
-    setFilter(newFilter);
-    setPage(1);
-  };
+  const updateFilter = useCallback(
+    debounce((newFilter) => {
+      setFilter(newFilter);
+      setPage(1);
+    }, debounceTimer),
+    []
+  );
 
   return {
     games,
