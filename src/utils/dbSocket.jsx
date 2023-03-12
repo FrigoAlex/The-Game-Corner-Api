@@ -1,8 +1,7 @@
-import db from "../../db.json";
-import dataFetcher from "../utils/dataFetcher";
+import dataFetcher, { getGameById, getCommentsBygameId, newComment } from "../utils/dataFetcher";
 
-const getGame = (id) => {
-  return db.games.find((game) => game.id === id);
+const getGame = async (id) => {
+  return await getGameById(id);
 };
 
 const getGames = async (page = 1, limit = 10, filter = "") => {
@@ -12,10 +11,14 @@ const getGames = async (page = 1, limit = 10, filter = "") => {
     games: data
   };
 };
-const getComments = (gameId) => {
-  return db.comments.filter((x) => x.gameId === Number(gameId));
+const getComments = async (gameId) => {
+  return await getCommentsBygameId(gameId);
 };
 
-export { getGames, getGame, getComments };
+const addComment = async (comment) => {
+  await newComment(comment);
+};
+
+export { getGames, getGame, getComments, addComment };
 
 export default getGames;
