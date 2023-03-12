@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+/* ----------------Error notify styles-------------- */
+.error-notify {
+  margin-top: 1rem;
+  color: #c15755;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #b02a37;
+}
+.text-error {
+  margin: 0.5rem 0;
+}
