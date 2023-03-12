@@ -45,17 +45,19 @@ const GameDescription = () => {
             <span className="game-info-value">{game.rating}</span>
           </div>
           <div className="platform-container">
-            <FontAwesomeIcon className="game-info-icon" icon={faGamepad} />
-            <span className="game-info-value">{game.platforms.join(", ")}</span>
+            <FontAwesomeIcon className="game-info-icon" icon={faUser} />
+            <span className="game-info-value">{game.author}</span>
           </div>
         </div>
         <div className="game-info">
           <p className="game-description">{game.description}</p>
           <ul className="game-info-list">
             <li className="game-info-item">
-              <FontAwesomeIcon className="game-info-icon" icon={faUser} />
-              <span className="game-info-title">Author: </span>
-              <span className="game-info-value">{game.author}</span>
+              <FontAwesomeIcon className="game-info-icon" icon={faGamepad} />
+              <span className="game-info-title">Platforms: </span>
+              <span className="game-info-value">
+                {game.platforms.join(", ")}
+              </span>
             </li>
             <li className="game-info-item">
               <FontAwesomeIcon className="game-info-icon" icon={faTags} />
