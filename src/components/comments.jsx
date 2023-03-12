@@ -4,13 +4,13 @@ import NoContent from "./noContent";
 const Comments = ({ gameId }) => {
   const { addComent, comments } = useComment(gameId);
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
     const comment = formData.get("comment").trim();
     const user = formData.get("name").trim();
-    addComent({
+    await addComent({
       gameId,
       text: comment,
       author: user,
