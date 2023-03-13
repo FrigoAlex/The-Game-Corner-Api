@@ -1,7 +1,7 @@
 import "../assets/styles/comments.css";
 import useComment from "../hooks/useComments";
 import NoContent from "./noContent";
-const Comments = ({ gameId }) => {
+const Comments = ({ gameId, sessionUser }) => {
   const { addComent, comments } = useComment(gameId);
 
   const onSubmit = async (e) => {
@@ -9,7 +9,7 @@ const Comments = ({ gameId }) => {
     const form = e.target;
     const formData = new FormData(form);
     const comment = formData.get("comment").trim();
-    const user = formData.get("name").trim();
+    const user = sessionUser.name;
     await addComent({
       gameId,
       text: comment,
@@ -21,31 +21,27 @@ const Comments = ({ gameId }) => {
     <div>
       <h1 className="comments-title">Comments</h1>
       <div className="comments-container">
-        <form className="comments-input" onSubmit={onSubmit}>
-          <label className="comment-label" htmlFor="comment-name">
-            Name
-          </label>
-          <input
-            className="comment-name"
-            autoComplete="off"
-            type="text"
-            name="name"
-            id="comment-name"
-          />
-          <label className="comment-label" htmlFor="comment-content">
-            Leave us a comment
-          </label>
-          <textarea
-            className="comment-content"
-            name="comment"
-            id="comment-content"
-            cols="70"
-            rows="10"
-          ></textarea>
-          <button className="comment-button" type="submit">
-            Submit
-          </button>
-        </form>
+        {sessionUser
+          ? (
+            <form className="comments-input" onSubmit={onSubmit}>
+              <label className="comment-label" htmlFor="comment-content">
+              Leave us a comment
+              </label>
+              <textarea
+                className="comment-content"
+                name="comment"
+                id="comment-content"
+                cols="70"
+                rows="10"
+              ></textarea>
+              <button className="comment-button" type="submit">
+              Submit
+              </button>
+            </form>
+          )
+          : (
+            <></>
+          )}
       </div>
       <div className="comments-list">
         {comments.map((comment) => {
