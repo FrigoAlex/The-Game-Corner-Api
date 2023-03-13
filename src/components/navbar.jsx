@@ -1,6 +1,6 @@
 import "../assets/styles/navbar.css";
 
-const Navbar = ({ navigateTo }) => {
+const Navbar = ({ navigateTo, user, logout }) => {
   return (
     <header className="navbar">
       <div className="logo-container" onClick={() => navigateTo("/")}>
@@ -12,12 +12,28 @@ const Navbar = ({ navigateTo }) => {
           <li className="nav-elements" onClick={() => navigateTo("/")}>
             <a className="nav-elements-a">Home</a>
           </li>
-          <li className="nav-elements" onClick={() => navigateTo("/login")}>
-            <a className="nav-elements-a">Login</a>
-          </li>
-          <li className="nav-elements" onClick={() => navigateTo("/register")}>
-            <a className="nav-elements-a">Register</a>
-          </li>
+          {!user
+            ? (
+              <>
+                <li className="nav-elements" onClick={() => navigateTo("/login")}>
+                  <a className="nav-elements-a">Login</a>
+                </li>
+                <li
+                  className="nav-elements"
+                  onClick={() => navigateTo("/register")}
+                >
+                  <a className="nav-elements-a">Register</a>
+                </li>
+              </>
+            )
+            : (
+              <li className="nav-elements" onClick={async () => {
+                await logout();
+                navigateTo("/");
+              }}>
+                <a className="nav-elements-a">logout</a>
+              </li>
+            )}
         </ul>
       </nav>
     </header>
