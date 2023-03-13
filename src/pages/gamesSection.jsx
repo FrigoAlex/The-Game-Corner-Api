@@ -1,9 +1,9 @@
 import "../assets/styles/gamesSection.css";
-import GameCard from "../components/gameCard";
+import GameCard from "../components/GameCard";
 import useGames from "../hooks/useGames";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import NoContent from "../components/noContent";
+import NoContent from "../components/NoContent";
 const GamesSection = ({ navigateTo }) => {
   const {
     games,

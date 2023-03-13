@@ -4,7 +4,7 @@ import {
   faCalendarDay
 } from "@fortawesome/free-solid-svg-icons";
 
-const gameCard = ({
+const GameCard = ({
   name,
   image,
   releaseDate,
@@ -37,4 +37,4 @@ const gameCard = ({
     </div>
   );
 };
-export default gameCard;
+export default GameCard;

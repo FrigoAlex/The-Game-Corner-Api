@@ -1,6 +1,6 @@
 import "../assets/styles/comments.css";
 import useComment from "../hooks/useComments";
-import NoContent from "./noContent";
+import NoContent from "./NoContent";
 const Comments = ({ gameId, sessionUser }) => {
   const { addComent, comments } = useComment(gameId);
 
