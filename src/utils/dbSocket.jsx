@@ -1,13 +1,13 @@
-import dataFetcher, { getGameById, getCommentsBygameId, newComment } from "../utils/dataFetcher";
+import dataFetcher, { getGameById, getCommentsBygameId, newComment, getUserByEmailAndPassword } from "../utils/dataFetcher";
 
 const getGame = async (id) => {
   return await getGameById(id);
 };
 
 const getGames = async (page = 1, limit = 10, filter = "") => {
-  const { paginas, data } = await dataFetcher(page, limit, filter);
+  const { pages, data } = await dataFetcher(page, limit, filter);
   return {
-    totalPages: paginas,
+    totalPages: pages,
     games: data
   };
 };
@@ -19,6 +19,14 @@ const addComment = async (comment) => {
   await newComment(comment);
 };
 
-export { getGames, getGame, getComments, addComment };
+const getSession = async () => {
+  return JSON.parse(localStorage.getItem("session"));
+};
+const loginSession = async (email, password) => {
+  const user = await getUserByEmailAndPassword(email, password);
+  if (user) localStorage.setItem("session", JSON.stringify(user));
+  return user;
+};
+export { getGames, getGame, getComments, addComment, getSession, loginSession };
 
 export default getGames;
