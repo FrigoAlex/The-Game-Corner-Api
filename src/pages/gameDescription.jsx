@@ -11,7 +11,7 @@ import {
   faGamepad,
   faStar
 } from "@fortawesome/free-solid-svg-icons";
-const GameDescription = () => {
+const GameDescription = ({ user }) => {
   const [game, setGame] = useState({});
   const id = window.location.pathname.split("/")[2];
   const updateGame = async () => {
@@ -74,7 +74,7 @@ const GameDescription = () => {
             </li>
           </ul>
         </div>
-        <Comments gameId={id} />
+        <Comments gameId={id} sessionUser={user} />
       </div>
     </main>
   );
