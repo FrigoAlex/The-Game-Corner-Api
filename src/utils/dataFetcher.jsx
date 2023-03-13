@@ -45,17 +45,47 @@ const dataFetcher = async (actualPage = 1, pageSize = 10, search = "") => {
 };
 
 export const getCommentsBygameId = async (id) => {
-  const response = await fetch(`${USER_API_URL}/comments?gameId=${id}`);
-  return await response.json();
+  try {
+    const response = await fetch(`${USER_API_URL}/comments?gameId=${id}`);
+    return await response.json();
+  } catch (error) {
+    return [];
+  }
 };
 
 export const newComment = async (comment) => {
-  await fetch(`${USER_API_URL}/comments`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(comment)
-  });
+  try {
+    await fetch(`${USER_API_URL}/comments`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(comment)
+    });
+  } catch (error) {
+    alert("An error has occurred, please try again later");
+  }
+};
+
+export const getUserByEmailAndPassword = async (email, password) => {
+  try {
+    const response = await fetch(`${USER_API_URL}/users?email=${email}&password=${password}`);
+    return (await response.json())[0];
+  } catch (error) {
+  }
+};
+
+export const newUser = async (user) => {
+  try {
+    await fetch(`${USER_API_URL}/users`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(user)
+    });
+  } catch (error) {
+    alert("An error has occurred, please try again later");
+  }
 };
 export default dataFetcher;
