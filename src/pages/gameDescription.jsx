@@ -1,7 +1,7 @@
 import "../assets/styles/gameDescription.css";
 import "../assets/styles/mediaquerys.css";
 import { getGame } from "../utils/dbSocket";
-import Comments from "../components/Comments";
+import Comments from "../components/comments";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

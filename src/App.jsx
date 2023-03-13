@@ -1,10 +1,10 @@
 import "./assets/styles/App.css";
 import useNavigate from "./hooks/useNavigate";
-import Navbar from "./components/Navbar";
-import GamesSection from "./pages/GamesSection";
-import GameDescription from "./pages/GameDescriptions";
-import Footer from "./components/Footer";
-import NoPage from "./components/NoPage";
+import Navbar from "./components/navbar";
+import GamesSection from "./pages/gamesSection";
+import GameDescription from "./pages/gameDescription";
+import Footer from "./components/footer";
+import NoPage from "./components/noPage";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import { HOME, GAME, LOGIN, REGISTER } from "./constants/pageRoutes";
