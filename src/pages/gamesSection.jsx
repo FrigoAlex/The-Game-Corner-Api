@@ -1,9 +1,8 @@
 import "../assets/styles/gamesSection.css";
 import GameCard from "../components/gameCard";
 import useGames from "../hooks/useGames";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import NoContent from "../components/noContent";
+import Pagination from "../components/Pagination";
 const GamesSection = ({ navigateTo }) => {
   const {
     games,
@@ -51,31 +50,7 @@ const GamesSection = ({ navigateTo }) => {
       </div>
       {games.length > 0
         ? (
-          <div className="pagination-container">
-            <ul className="pagination-ul">
-              <li className="pagination-li">
-                <button
-                  className="pagination-btn"
-                  disabled={page === 1}
-                  onClick={goOnePageBack}
-                >
-                  <FontAwesomeIcon icon={faArrowLeft} />
-                </button>
-              </li>
-              <li className="pagination-li">
-                <span className="pagination-btn">{page}</span>
-              </li>
-              <li className="pagination-li">
-                <button
-                  className="pagination-btn"
-                  disabled={page === totalPages}
-                  onClick={goOnePageForward}
-                >
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </button>
-              </li>
-            </ul>
-          </div>
+          <Pagination page={page} totalPages={totalPages} goOnePageBack={goOnePageBack} goOnePageForward={goOnePageForward} />
         )
         : null}
     </main>
