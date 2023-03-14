@@ -11,18 +11,15 @@ const useGamePagination = () => {
   const [totalPages, setTotalPages] = useState(0);
 
   const getGames = async () => {
-    const { games, totalPages } = await getDBGames(
-      page,
-      GAMES_PER_PAGE,
-      filter
-    );
+    const { games, totalPages: total } = await getDBGames(page, GAMES_PER_PAGE, filter);
     if (page < 1 && games.length > 0) {
       return setPage(1);
     }
     setGames(games);
-    setTotalPages(totalPages);
-    if (page > totalPages) {
-      return setPage(totalPages);
+
+    setTotalPages(total);
+    if (page > total) {
+      return setPage(total);
     }
   };
 

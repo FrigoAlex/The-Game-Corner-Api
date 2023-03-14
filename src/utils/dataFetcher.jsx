@@ -28,7 +28,7 @@ const dataFetcher = async (actualPage = 1, pageSize = 10, search = "") => {
     );
     const data = await response.json();
     return {
-      paginas: Math.ceil(data.count / pageSize),
+      pages: Math.ceil(data.count / pageSize),
       data: data.results.map((game) => ({
         id: game.id,
         name: game.name,
